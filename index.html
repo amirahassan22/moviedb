@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS exam</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- start side bar -->
+    <div class="sidebar d-flex">
+        <div class="sidebar-content py-3">
+            <div class="sidebar-inner h-100 d-flex flex-column justify-content-between">
+                <div class="sidebar-links">
+                    <ul>
+                        <li><a class="x" id="nowPlaying" href="#">Now Playing</a></li>
+                        <li><a class="x" id="popular" href="#">Popular</a></li>
+                        <li><a class="x" id="topRated" href="#">Top Rated</a></li>
+                        <li><a class="x" id="trending" href="#">Trending</a></li>
+                        <li><a class="x" id="upcoming" href="#">Upcoming</a></li>
+                        <li><a id="contactLink" href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="copyrights mb-3">
+                    <div class="social-icons mb-3">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-solid fa-globe"></i></a>
+                    </div>
+                    <p>Copyright Â© 2019 All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-icons d-flex flex-column justify-content-between align-items-center">
+            <div class="logo">
+                <img src="imgs/logo.png" class="img-fluid" alt="">
+            </div>
+            <div id="list" class="open-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="other-icons d-flex flex-column">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+    <!-- end side bar -->
+
+    <!-- start search box -->
+    <div class="searching py-5">
+        <div class="container w-75 m-auto">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="serach-word">
+                        <input type="text" id="searchAll" class="form-control" placeholder="get movies by word...">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="serach-word">
+                        <input type="text" id="searchSection" class="form-control" placeholder="search...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end search box -->
+
+    <!-- start display movies -->
+    <section id="shows">
+        <div class="container">
+            <div class="row g-4 mb-5" id="showSearch">
+                
+            </div>
+            <div class="row g-4" id="show">
+                
+            </div>
+        </div>
+    </section>
+    <!-- start display movies -->
+
+    <!-- start contact -->
+    <section id="contact">
+        <div class="contact-us">
+            
+            <div class="container w-75 m-auto">
+                <h2 class="my-5 text-white">ContacUs...</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-feild">
+                            <div class="serach-word">
+                                <input type="email" id="name" class="form-control form-element" placeholder="Enter your name">
+                            </div>
+                            <div class="valid validName"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-feild">
+                            <div class="serach-word">
+                                <input type="text" id="email" class="form-control form-element" placeholder="Enter Email">
+                            </div>
+                            <div class="valid validEmail"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-feild">
+                            <div class="serach-word">
+                                <input type="text" id="phone" class="form-control form-element" placeholder="Enter Phone">
+                            </div>
+                            <div class="valid validPhone"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-feild">
+                            <div class="serach-word">
+                                <input type="text" id="age" class="form-control form-element" placeholder="Enter Age">
+                            </div>
+                            <div class="valid validAge"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-feild">
+                            <div class="serach-word">
+                                <input type="password" id="pass" class="form-control form-element" placeholder="Enter Password">
+                            </div>
+                            <div class="valid validPassword"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-feild">
+                            <div class="serach-word">
+                                <input type="password" id="repass" class="form-control form-element" placeholder="Re-enter Password">
+                            </div>
+                            <div class="valid validRepassword"></div>
+                        </div>
+                    </div>
+                    <div class="btn-sub pb-5">
+                        <button class="btn btn-outline-danger px-3 mt-3" >submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end contact -->
+
+    <!-- scripts -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

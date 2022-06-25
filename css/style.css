@@ -1,0 +1,151 @@
+body{
+    background-color: #000000f2;
+}
+*{
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.serach-word input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,.7);
+    border-radius: 0;
+    color: #fff;
+   
+}
+.serach-word input[placeholder]{
+    text-align: center;
+}
+.serach-word input:focus{
+    background-color: transparent;
+    /* box-shadow: none;
+    border-bottom: 2px solid rgba(255,255,255,.7); */
+    text-align: start;
+    color: #fff;
+}
+.contact-us h2{
+    font-weight: 500;
+    font-size: 32px;
+}
+.form-feild{
+    padding-bottom: 15px;
+}
+/*start side bar  */
+.sidebar{
+    
+    color: #fff;
+    /* width: 22%; */
+}
+.sidebar-content{
+    background-color: #000;
+    position: fixed;
+    /* top: 0; */
+    left: 0;
+    /* bottom: 0; */
+    z-index: 99999999;
+    padding-left: 20px;
+    padding-right: 10px;
+    width: 250px;
+    height: 100vh;
+    transform: translate(-100%);
+    transition: transform 500ms ease;
+    /* display: none; */
+}
+.sidebar-icons{
+    position: fixed;
+    /* top: 0; */
+    left: 240px;
+    /* bottom: 0; */
+    height: 100vh;
+    z-index: 99999999;
+    background-color: #fff;
+    left: 0;
+    padding: 23px 15px;
+    color: #212529;
+    transition: left 500ms ease;
+    /* width: 28%; */
+}
+
+.sidebar-links ul{
+    margin-left: -30px;
+    height: 330px;
+    overflow: hidden;
+}
+.sidebar-links ul li{
+    padding-bottom: 13px;
+    padding-top: 400px;
+    display: none;
+    /* transition: transform 500ms ease; */
+}
+.sidebar-content a{
+    color: #fff;
+    transition: color 500ms ease;
+}
+
+.sidebar-content a:hover{
+    color: #ff655c;
+}
+.social-icons a{
+    padding: 0 10px;
+    font-size: 14px;
+}
+.sidebar-icons i{
+    font-weight: 900;
+}
+.copyrights p{
+    color: #999;
+}
+.logo img{
+    height: 48px;
+}
+.open-icon{
+    font-size: 25px;
+}
+.other-icons i{
+    padding-top: 15px;
+}
+.movie-details{
+    overflow: hidden;
+    border-radius: 5px;
+}
+.inner-layer{
+    color: #000;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    transition: top 500ms ease;
+    
+}
+.inner-layer h2{
+    font-size: 32px;
+}
+.inner-layer p{
+    font-weight: 800;
+}
+.movie-details:hover .inner-layer{
+    top: 0;
+}
+
+/* end sidee bar */
+
+.valid{
+    height: 60px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    display: none;
+}
